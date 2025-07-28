@@ -99,8 +99,18 @@ header button {
 .photo {
   flex: 1 1 30%;
   max-width: 300px;
-  background-color: white;
-  padding: 10px;
+}
+
+.gallery .desc {margin: 10px;}
+.gallery {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: white;
+}
+.gallery:hover {
+  border: 1px solid #777;
 }
 
 
