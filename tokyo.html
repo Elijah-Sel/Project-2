@@ -2,102 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>TripReport</title>
+    <title>Tokyo | TripReport</title>
     <link rel="stylesheet" href="tripReport.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="nav-left">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-            <button onclick="toggleDropdown()">Locations</button>
-            <div id="dropdownMenu" class="dropselection">
-                <a href="tokyo.html">Tokyo</a>
+        <div class="nav-left d-flex align-items-center">
+            <a href="index.html">Home</a>
+
+            <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Locations
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="tokyo.html">Tokyo</a></li>
+                </ul>
             </div>
-        </div>
-        <a href="#">Help</a>
+
+            <a href="about.html">Help</a>
         </div>
 
         <div class="nav-right">
-        <a href="https://github.com/Elijah-Sel/Project-2">GitHub</a>
+            <a href="https://github.com/Elijah-Sel/Project-2" target="_blank">GitHub</a>
         </div>
     </header>
 
     <main>
+        <h1 class="title">Tokyo</h1>
+
         <div class="content-row">
             <div class="text">
                 <p>
-                    Tokyo, the capital city of Japan, is a bustling metropolis known for its blend of traditional culture and cutting-edge modernity. It is home to over 13 million people and offers a wide variety of experiences, from ancient temples like Sensō-ji in Asakusa to the towering skyscrapers of Shinjuku and the vibrant fashion scene in Harajuku. The city is also famous for its efficient public transport, delicious cuisine (like sushi, ramen, and street food), and world-renowned technology and pop culture. <br> 
-                    Tokyo is divided into distinct wards, each with its own personality—Shibuya is known for its youth culture and iconic crossing, while Akihabara attracts tech and anime fans. Visitors can enjoy serene spots like the Meiji Shrine or explore the busy shopping districts of Ginza. Tokyo also offers a glimpse into the history of its country at the Imperial Palace and Tokyo National Museum. <br>
-                    Whether you may be interested in history, technology, food, or fashion, Tokyo offers something for everyone.
+                    Tokyo, the capital city of Japan, is a bustling metropolis known for its blend of traditional culture and cutting-edge modernity. It is home to over 13 million people and offers a wide variety of experiences, from ancient temples like Sensō-ji in Asakusa to the towering skyscrapers of Shinjuku and the vibrant fashion scene in Harajuku. <br><br>
+                    The city is also famous for its efficient public transport, delicious cuisine (like sushi, ramen, and street food), and world-renowned technology and pop culture. Tokyo is divided into distinct wards, each with its own personality—Shibuya is known for its youth culture and iconic crossing, while Akihabara attracts tech and anime fans. <br><br>
+                    Visitors can enjoy serene spots like the Meiji Shrine or explore the busy shopping districts of Ginza. Whether you're interested in history, technology, food, or fashion, Tokyo offers something for everyone.
                 </p>
             </div>
         </div>
 
-        <div class="content-row">
-            <div class="gallery">
-                <a target="_blank" href="img/temple.jpg">
-                    <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/temple.jpg" width="300px" height="300px">
-                </a>
-                <div class="desc">Japanese Temple</div>
+        <div class="card-group p-4">
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/temple.jpg" class="card-img-top" alt="Japanese Temple">
+                <div class="card-body">
+                    <h5 class="card-title">Japanese Temple</h5>
+                    <p class="card-text">This is a Japanese temple, a very good place to visit for tourists and locals. They are typically used for religious purposes.</p>
+                </div>
             </div>
-            
-            <div class="gallery">
-                <a target="_blank" href="running.jpg">
-                    <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/running.jpg" width="300px" height="300px">
-                </a>
-                <div class="desc">Glico Running Man</div>
-            </div>        
 
-            <div class="gallery">
-                <a target="_blank" href="crosswalk.jpg">
-                    <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/crosswalk.jpg" width="300px" height="300px">
-                </a>
-                <div class="desc">Bustling Japanese City</div>
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/running.jpg" class="card-img-top" alt="Glico Running Man">
+                <div class="card-body">
+                    <h5 class="card-title">Glico Running Man</h5>
+                    <p class="card-text">This is a sign in Osaka for the Glico company. Installed in 1935, it has gained popularity over time.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://raw.githubusercontent.com/Elijah-Sel/Project-2/refs/heads/main/crosswalk.jpg" class="card-img-top" alt="Busy Japanese City">
+                <div class="card-body">
+                    <h5 class="card-title">Busy Japanese City</h5>
+                    <p class="card-text">Many Japanese cities are typically very packed, but unlike places like New York, it is much easier to get to your destination.</p>
+                </div>
             </div>
         </div>
 
-
-
-
         <div class="content-row">
             <div class="form">
-                <h1>Questions to Consider</h1> <br>
+                <h2>Questions to Consider</h2>
                 <form action="" method="get">
                     <label for="q1">What part of Tokyo would you most like to explore?</label><br>
                     <input type="text" id="q1"><br>
+
                     <label for="q2">How do you think the mix of old and new in Tokyo affects daily life?</label><br>
                     <input type="text" id="q2"><br>
+
                     <label for="q3">What food would you want to try first in Tokyo?</label><br>
                     <input type="text" id="q3"><br>
+
                     <label for="q4">How do you think Tokyo compares to other major cities around the world?</label><br>
                     <input type="text" id="q4"><br>
+
                     <label for="q5">What cultural experience in Tokyo would you be most excited to try?</label><br>
                     <input type="text" id="q5"><br>
+
                     <input type="submit"> <input type="reset">
                 </form>
             </div>
         </div>
     </main>
 
-     <footer>
-        Email me <a href="mailto:frendofmannam@gmail.com">here</a> |
-        produced by Elijah Selassie
+    <footer>
+        Email me <a href="mailto:frendofmannam@gmail.com">here</a> | produced by Elijah Selassie
     </footer>
-
-    <script>
-    function toggleDropdown() {
-      const menu = document.getElementById("dropdownMenu");
-      menu.style.display = (menu.style.display === "block") ? "none" : "block";
-    }
-
-    window.addEventListener("click", function(e) {
-      const menu = document.getElementById("dropdownMenu");
-      if (!e.target.matches("button") && menu.style.display === "block") {
-        menu.style.display = "none";
-      }
-    });
-  </script>
 </body>
 </html>
